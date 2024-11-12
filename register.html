@@ -6,13 +6,22 @@
     <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <h1>Formulário de Cadastro</h1>
-    <form onsubmit="alert('Formulário enviado!')" autocomplete="off" method="post" name="signup">
+    <fieldset>
+    <legend><h1>Formulário de Cadastro</h1></legend>
+    <form onsubmit="alert('Formulário enviado!')" autocomplete="off" method="get" name="signup">
         Nome: <input type="text" name="name" /> <br />
         Idade: <input type="number" name="age>" /> <br />
+        <label>Cargo:</label>
+        <select name="role">
+            <option value="administrador">Administrador</option>
+            <option value="gerente">Gerente</option>
+        </select>
         Senha: <input type="password" name="password" /> <br />
+        <label>Mensagem:</label>
+        <textarea rows="10" cols="50" name="mensagem"></textarea>
         <button type="submit" name="submit">Enviar</button>
     </form>
+    </fieldset>
     <form>
         <label>Digite aqui:</label> <input type="text" name="text" /> <br />
         <label>Número:</label> <input type="number" /><br/>
